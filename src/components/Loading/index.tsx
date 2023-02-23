@@ -1,4 +1,4 @@
-import { Container, LoadIndicarot } from "./styles";
+import { Container, LoadIndicarot } from './styles';
 
 export function Loading() {
   return(
