@@ -5,7 +5,7 @@ import theme from '@theme/index';
 import { ThemeProvider } from 'styled-components/native'
 import { Loading } from '@components/Loading';
 import { StatusBar } from 'react-native';
-import { Players } from '@screens/Players';
+import { Routes } from '@routes/index';
 
 export default function App() {
   const [fontsLoader] = useFonts({
@@ -20,7 +20,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoader ? <Players /> : <Loading/>}
+      {fontsLoader ? <Routes /> : <Loading/>}
     </ThemeProvider>
   );
 }
